@@ -6,16 +6,14 @@ body {
   background-color: #31363f;
 }
 main {
-  width: 70%;
+  width: 100%; 
+  margin-left: 10%; 
 }
-
 aside {
-  position: static;
+  position: fixed;
   top: 0;
-  float: left;
-  display: block;
+  left: 0;
   width: 20%;
-  overflow: hidden;
   height: 100%;
 }
 
@@ -25,9 +23,9 @@ aside {
   left: -80px;
   transition: 0.3s;
   padding: 10px;
-  width: 7%;
+  width: 40%; 
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 0 5px 5px 0;
 }
 
@@ -83,4 +81,23 @@ p {
 }
 article h2 {
   color: #00bfff;
+}
+
+/* responsive */
+@media screen and (max-width: 600px) {
+  #aside a {
+    box-sizing: border-box;
+    position: absolute;
+    left: -50px;
+    transition: 0.3s;
+    padding: 8px;
+    width: 100%; 
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 0 5px 5px 0;
+  }
+  main {
+    width: 100%; 
+    margin-left: 15%; 
+  }
 }
