@@ -1,50 +1,86 @@
 body {
-    display: flex;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0px;
-    background-color: #31363f;
+  display: flex;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px;
+  background-color: #31363f;
 }
+main {
+  width: 70%;
+}
+
 aside {
-    position: fixed;
-    width: 20%;
-    height:100%;
-    padding: 20px;
-    background-color: #222831;
-    box-sizing:border-box;
+  position: static;
+  top: 0;
+  float: left;
+  display: block;
+  width: 20%;
+  overflow: hidden;
+  height: 100%;
 }
-aside section{
-    margin-bottom: 20px;
+
+#aside a {
+  box-sizing: border-box;
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 10px;
+  width: 7%;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 0 5px 5px 0;
 }
-h1 {
-    color: #fff455;
+
+#aside a:hover {
+  background: linear-gradient(
+    360deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(4, 111, 142, 1) 56%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
+  left: 0;
 }
-aside a {
-    display: block;
-    width: 100%;
-    padding: 5px;
-    background-color: #31363f;
-    color: #76abae;
-    text-decoration: none;
-    border-radius: 20px;
-    text-align: left;
+
+#fe {
+  top: 20px;
+  background-color: #e6faff;
+  color: #e6faff;
 }
-aside a:hover {
-    background-color: #fff455;}
+#basic {
+  top: 80px;
+  background-color: #99ebff;
+  color: #99ebff;
+}
+#css {
+  top: 140px;
+  background-color: #66e0ff;
+  color: #66e0ff;
+}
+#js {
+  top: 200px;
+  background-color: #1ad1ff;
+  color: #1ad1ff;
+}
+#be {
+  top: 260px;
+  background-color: #00b8e6;
+  color: #00b8e6;
+}
+
 article {
-    text-align: left;
-    padding-left: 25%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-right: 5%;
-    display: flexbox;
+  text-align: left;
+  padding-left: 0%;
+  padding-top: 1%;
+  padding-bottom: 10%;
+  padding-right: 5%;
 }
 h3 {
-    color: #76abae;
+  color: #00bfff;
 }
 p {
-    color: #eeeeee;
+  color: #eeeeee;
 }
-article h2{
-    color: #fff455;
+article h2 {
+  color: #00bfff;
 }
